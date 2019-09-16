@@ -53,10 +53,11 @@ def get_blitz_location():
         config_blitz_url += "artifact/omero-blitz/build/distributions/"
         config_blitz_url += "omero-blitz-VERSION-python.zip"
     else:
-        config_blitz_url = (
-            "https://artifacts.openmicroscopy.org/artifactory/ome.releases/"
-            "org/openmicroscopy/omero-blitz/VERSION/"
-            "omero-blitz-VERSION-python.zip")
+        # config_blitz_url = (
+        #     "https://artifacts.openmicroscopy.org/artifactory/ome.releases/"
+        #     "org/openmicroscopy/omero-blitz/VERSION/"
+        #     "omero-blitz-VERSION-python.zip")
+        config_blitz_url = ("https://py3-ci.openmicroscopy.org/jenkins/job/OMERO-build-build/20/artifact/omero-blitz/build/distributions/omero-blitz-5.5.4-SNAPSHOT-python.zip")
 
     # load version.properties if available
     config_path = os.environ.get("VERSION_PROPERTIES",
